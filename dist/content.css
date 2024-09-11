@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/*custom properties*/
+:root {
+    --ff--primary: outfit;
+    --ff-secondary: outfit;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #ffffff;
+    --clr-drk-light:rgba(237, 240, 243, 0.562);
+    --clr-dark: #24262b;
+    --clr-accent: tomato;
+    --clr-accent__-adj: #fcfc;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --bs: 1.25em 1.25em 1.75em rgba(51, 72, 189, 0.123),
+          1.125em 1.125em 1.25em rgba(70, 97, 136, 0.082);
+    --ts: 1px 3px 1px rgb(88, 67, 67);
+}
+
+@media (max-width:500px){
+    :root {
+        --fs-h1: 2.5rem;
+        --fs-h2: 2rem;
+        --fs-h3: 1.15rem;
+        --fs-body: 0.9rem;
+    }
+}
+
+.tour-types-card-holder {
+    padding: 20px;
+    max-width:1200px ;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tour-types-card-holder .tour-type-card {
+    height: 630px;
+    width: 47%;
+    min-width: 40vh;
+    box-shadow: var(--bs);
+    border-bottom: 2px solid var(--clr-accent);
+    border-top: 2px solid var(--clr-accent);
+}
+
+.tour-types-card-holder .tour-type-card .tour-type-name{
+    color: var(--clr-accent);
+    padding: 10px;
+}
+
+.tour-types-card-holder .tour-type-card img{
+    width: 100%;
+    height: 300px;
+}
+
+.tour-types-card-holder .tour-type-card .tour-type-description{
+    padding: 25px;
+    font-size: var(--fs-body);
+}
+
+@media(max-width:720px){
+    .tour-types-card-holder .tour-type-card {
+        width: 100%;
+        height: 580px;
+        min-width: none;
+    }
+}
+
+@media(max-width:400px){
+    .tour-types-card-holder {
+        padding:3px ;
+    }
+
+    .tour-types-card-holder .tour-type-card{
+            width: 100%;
+            min-width: 100%;
+    }
+
+    .tour-types-card-holder .tour-type-card img{
+        width: 100%;
+        height: 250px;
+
+    }
+}
